@@ -1,0 +1,6 @@
+.l-base {
+  display: grid;
+  @include breakpoint(expanded) {
+    margin: 1.375rem;
+  }
+}

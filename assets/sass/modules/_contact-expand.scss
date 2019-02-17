@@ -1,0 +1,12 @@
+.contact-expand {
+  &__header {
+    border-top: 1px solid map-get($colors, light-gray);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.02rem;
+    color: map-get($colors, dark-gray);
+  }
+  &__value {
+    margin-bottom: 1rem;
+  }
+}

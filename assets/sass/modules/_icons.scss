@@ -1,0 +1,5 @@
+.icons {
+  &--inactive {
+    color: map-get($colors, light-gray);
+  }
+}

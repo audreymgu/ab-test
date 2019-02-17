@@ -1,0 +1,8 @@
+@import "block";
+
+.view-toggle {
+  @extend .block;
+  &__btn {
+    display: inline-block;
+  }
+}

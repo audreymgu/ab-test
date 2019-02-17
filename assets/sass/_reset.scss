@@ -1,0 +1,24 @@
+body, ul, button {
+  padding: 0;
+}
+
+body, ul, p, button {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+.fas {
+  color: map-get($colors, blue);
+}

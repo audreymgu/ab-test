@@ -1,0 +1,9 @@
+@import "block";
+
+.contact-list {
+  @extend .block;
+  max-width: 940px;
+  &__header {
+
+  }
+}

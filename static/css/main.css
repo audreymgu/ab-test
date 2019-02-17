@@ -1,3 +1,114 @@
+body, ul, button {
+  padding: 0;
+}
 
+body, ul, p, button {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+.fas {
+  color: #005cf1;
+}
+
+body {
+  background-color: #ebeef5;
+  font-family: proxima-nova, sans-serif;
+}
+
+.l-base {
+  display: grid;
+}
+@media (min-width: 750px) {
+  .l-base {
+    margin: 1.375rem;
+  }
+}
+
+.block, .contact-list, .view-toggle {
+  border: 1px solid #dde0eb;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.icons--inactive {
+  color: #dde0eb;
+}
+
+.block, .contact-list, .view-toggle {
+  border: 1px solid #dde0eb;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.view-toggle__btn {
+  display: inline-block;
+}
+
+.block, .contact-list, .view-toggle {
+  border: 1px solid #dde0eb;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.contact-list {
+  max-width: 940px;
+}
+.contact {
+  margin: 0.75rem 1.25rem 0.75rem 1.25rem;
+}
+.contact__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-icon {
+  height: 2.75rem;
+  width: 2.75rem;
+  border: 1px solid #dde0eb;
+  border-radius: 1.375rem;
+  text-align: center;
+}
+.contact-icon__placeholder {
+  color: #83899c;
+  line-height: 2.75rem;
+}
+
+.contact-top__name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.contact-top__location {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+}
+
+.contact-quick-access__btn {
+  display: inline-block;
+}
+
+.contact-expand__header {
+  border-top: 1px solid #dde0eb;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.02rem;
+  color: #83899c;
+}
+.contact-expand__value {
+  margin-bottom: 1rem;
+}
 
 /*# sourceMappingURL=main.css.map */

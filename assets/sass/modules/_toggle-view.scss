@@ -1,0 +1,16 @@
+@import "block";
+
+.toggle-view {
+  @extend .block;
+  padding: 1rem 0.5rem 0.8rem 0.5rem;
+  font-size: 1.6rem;
+  @include breakpoint(expanded) {
+    margin: 0 0 0 0.5rem;
+    padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+    font-size: 1.4rem;
+  }
+  &__btn {
+    display: inline-block;
+    margin: 0 0.25rem 0 0.25rem;
+  }
+}

@@ -1,5 +1,10 @@
 .contact-quick-access {
+  font-size: 1.2rem;
+  @include breakpoint(expanded) {
+    margin: 0 1rem 0 1rem;
+  }
   &__btn {
     display: inline-block;
+    margin: 0 0.2rem 0 0.2rem;
   }
 }

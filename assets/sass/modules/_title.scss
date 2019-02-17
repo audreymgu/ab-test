@@ -1,0 +1,8 @@
+.title {
+  font-size: 1.5rem;
+  margin: 1rem;
+  @include breakpoint(expanded) {
+    font-size: 2rem;
+    margin: 0 1rem 1.25rem 0;
+  }
+}

@@ -10,7 +10,7 @@
 	<title>actionbuilder</title>
 	<meta name="description" content="">
 	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
-	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Load favicon -->
 	<link rel="shortcut icon" href="static/img/ab-favicon.png">
 	<!-- Load styles -->
@@ -24,50 +24,194 @@
 <body>
 	<div class="container">
 		<div class="l-base">
-			<h1>4 People</h1>
-			<ul class="export">
-				<li><i class="fas fa-file-download"></i>Export</li>
-			</ul>
-			<div class="sort-toggle">
-				<button><i class="fas fa-sort-alpha-up"></i>Last Name</button>
+			<div class="nav-bar">
+				<div class="title-wrapper">
+					<h1 class="title">4 People</h1>
+					<ul>
+						<li class="btn btn--compact">
+							<i class="btn__icon btn__icon--compact fas fa-file-download"></i>
+							<p class="btn__text btn__text--compact">Export</p>
+						</li>
+					</ul>
+				</div>
+				<div class="toggle-wrapper">
+					<ul class="toggle-view">
+						<li class="toggle-view__btn"><i class="fas fa-list"></i></li>
+						<li class="toggle-view__btn"><i class="fas fa-chart-bar icons--inactive"></i></li>
+						<li class="toggle-view__btn"><i class="fas fa-map icons--inactive"></i></li>
+					</ul>
+					<ul class="toggle-sort">
+						<li class="toggle-sort__btn">
+							<i class="toggle-sort__icon fas fa-sort-alpha-up "></i>
+							<p class="toggle-sort__text">Last Name</p>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<ul class="view-toggle">
-				<li class="view-toggle__btn"><i class="fas fa-list"></i></li>
-				<li class="view-toggle__btn"><i class="fas fa-chart-bar icons--inactive"></i></li>
-				<li class="view-toggle__btn"><i class="fas fa-map icons--inactive"></i></li>
-			</ul>
-			<div class="contact-list">
-				<div class="contact">
+
+		<div class="contact-list">
+			<div class="contact">
+				<div class="contact-left">
 					<div class="contact-icon">
 						<p class="contact-icon__placeholder">JD</p>
 					</div>
-					<div class="contact-top">
-						<p class="contact-top__name">Jane Doe</p>
-						<p class="contact-top__location">Night City, CA</p>
+					<div class="contact-summary">
+						<p class="contact-summary__name">Jane Doe</p>
+						<p class="contact-summary__location">Night City, CA</p>
 					</div>
+				</div>
+				<div class="contact-right">
 					<ul class="contact-quick-access">
 						<li class="contact-quick-access__btn"><i class="fas fa-envelope"></i></li>
 						<li class="contact-quick-access__btn"><i class="fas fa-phone"></i></li>
 						<li class="contact-quick-access__btn"><i class="fas fa-comment-alt icons--inactive"></i></li>
 						<li class="contact-quick-access__btn"><i class="fas fa-map-marker-alt"></i></li>
 					</ul>
-					<div class="contact__info-toggle">
-						<i class="fas fa-chevron-left"></i>
-					</div>
 					<div class="contact-expand">
-						<p class="contact-expand__header">Email</p>
-						<p class="contact-expand__value">jane.doe@gmail.com</p>
-						<p class="contact-expand__header">Address</p>
-						<ul class="contact-expand__value">
+						<button class="btn btn--expand"><i class="contact-expand__icon fas fa-chevron-left"></i></button>
+					</div>
+				</div>
+				<div class="contact-dropdown">
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Email</p>
+						<p class="dropdown-item__value">jane.doe@gmail.com</p>
+					</div>
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Phone</p>
+						<p class="dropdown-item__value">1-800-8888<p>
+					</div>
+					<div class="dropdown-item dropdown-item--extended">
+						<p class="dropdown-item__header">Address</p>
+						<ul class="dropdown-item__value">
 							<li>1 Infinite Loop</li>
 							<li>Cupertino, CA 95014</li>
 							<li>United States<li>
 						</ul>
-						<p class="contact-expand__header">Phone</p>
-						<p class="contact-expand__value">1-800-8888<p>
 					</div>
 				</div>
 			</div>
+			<div class="contact">
+				<div class="contact-left">
+					<div class="contact-icon">
+						<p class="contact-icon__placeholder">JD</p>
+					</div>
+					<div class="contact-summary">
+						<p class="contact-summary__name">Jane Doe</p>
+						<p class="contact-summary__location">Night City, CA</p>
+					</div>
+				</div>
+				<div class="contact-right">
+					<ul class="contact-quick-access">
+						<li class="contact-quick-access__btn"><i class="fas fa-envelope"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-phone"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-comment-alt icons--inactive"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-map-marker-alt"></i></li>
+					</ul>
+					<div class="contact-expand">
+						<button class="btn btn--expand"><i class="contact-expand__icon contact-expand__icon--collapsed fas fa-chevron-left"></i></button>
+					</div>
+				</div>
+				<div class="contact-dropdown">
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Email</p>
+						<p class="dropdown-item__value">jane.doe@gmail.com</p>
+					</div>
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Phone</p>
+						<p class="dropdown-item__value">1-800-8888<p>
+					</div>
+					<div class="dropdown-item dropdown-item--extended">
+						<p class="dropdown-item__header">Address</p>
+						<ul class="dropdown-item__value">
+							<li>1 Infinite Loop</li>
+							<li>Cupertino, CA 95014</li>
+							<li>United States<li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="contact">
+				<div class="contact-left">
+					<div class="contact-icon">
+						<p class="contact-icon__placeholder">JD</p>
+					</div>
+					<div class="contact-summary">
+						<p class="contact-summary__name">Jane Doe</p>
+						<p class="contact-summary__location">Night City, CA</p>
+					</div>
+				</div>
+				<div class="contact-right">
+					<ul class="contact-quick-access">
+						<li class="contact-quick-access__btn"><i class="fas fa-envelope"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-phone"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-comment-alt icons--inactive"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-map-marker-alt"></i></li>
+					</ul>
+					<div class="contact-expand">
+						<button class="btn btn--expand"><i class="contact-expand__icon contact-expand__icon--collapsed fas fa-chevron-left"></i></button>
+					</div>
+				</div>
+				<div class="contact-dropdown">
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Email</p>
+						<p class="dropdown-item__value">jane.doe@gmail.com</p>
+					</div>
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Phone</p>
+						<p class="dropdown-item__value">1-800-8888<p>
+					</div>
+					<div class="dropdown-item dropdown-item--extended">
+						<p class="dropdown-item__header">Address</p>
+						<ul class="dropdown-item__value">
+							<li>1 Infinite Loop</li>
+							<li>Cupertino, CA 95014</li>
+							<li>United States<li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="contact">
+				<div class="contact-left">
+					<div class="contact-icon contact-icon--active">
+						<p class="contact-icon__placeholder contact-icon__placeholder--active">JD</p>
+					</div>
+					<div class="contact-summary">
+						<p class="contact-summary__name">Jane Doe</p>
+						<p class="contact-summary__location">Night City, CA</p>
+					</div>
+				</div>
+				<div class="contact-right">
+					<ul class="contact-quick-access">
+						<li class="contact-quick-access__btn"><i class="fas fa-envelope"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-phone"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-comment-alt icons--inactive"></i></li>
+						<li class="contact-quick-access__btn"><i class="fas fa-map-marker-alt"></i></li>
+					</ul>
+					<div class="contact-expand">
+						<button class="btn btn--expand"><i class="contact-expand__icon contact-expand__icon--collapsed fas fa-chevron-left"></i></button>
+					</div>
+				</div>
+				<div class="contact-dropdown">
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Email</p>
+						<p class="dropdown-item__value">jane.doe@gmail.com</p>
+					</div>
+					<div class="dropdown-item">
+						<p class="dropdown-item__header">Phone</p>
+						<p class="dropdown-item__value">1-800-8888<p>
+					</div>
+					<div class="dropdown-item dropdown-item--extended">
+						<p class="dropdown-item__header">Address</p>
+						<ul class="dropdown-item__value">
+							<li>1 Infinite Loop</li>
+							<li>Cupertino, CA 95014</li>
+							<li>United States<li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		</div><!-- layout -->
 	</div><!-- container -->
 

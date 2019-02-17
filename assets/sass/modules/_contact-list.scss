@@ -2,7 +2,11 @@
 
 .contact-list {
   @extend .block;
+  margin-top: 3.8rem;
   max-width: 940px;
+  @include breakpoint(expanded){
+    margin-top: 0;
+  }
   &__header {
 
   }

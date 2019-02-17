@@ -1,7 +1,9 @@
 .contact {
-  margin: 0.75rem 1.25rem 0.75rem 1.25rem;
-  &__name {
-    font-size: 1.1rem;
-    font-weight: 600;
+  padding: 0.75rem 0 0.75rem 0;
+  border-bottom: 1px solid map-get($colors, light-gray);
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  @include breakpoint(expanded) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

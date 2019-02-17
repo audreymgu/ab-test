@@ -1,0 +1,41 @@
+@import "block";
+
+.btn {
+  @extend .block;
+  border: 1px solid map-get($colors, light-gray);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.25rem 0.2rem 0.25rem;
+  box-shadow: 0px 1px map-get($colors, light-gray);
+  &__text {
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    &--compact {
+      display: none;
+      @include breakpoint(expanded) {
+        display: inline;
+        color: map-get($colors, blue);
+      }
+    }
+  }
+  &__icon {
+    &--compact {
+      font-size: 1rem;
+      @include breakpoint(expanded) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  &--compact {
+    margin: 0.2rem 0 0 0;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    @include breakpoint(expanded) {
+      margin: 0.4rem 0 0 1rem;
+    }
+  &--expand {
+    &--active {
+
+    }
+  }
+
+}

@@ -1,0 +1,11 @@
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 11.5rem;
+  @include breakpoint(expanded) {
+    position: static;
+    max-width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

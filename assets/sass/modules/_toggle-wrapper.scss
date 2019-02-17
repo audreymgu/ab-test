@@ -1,0 +1,12 @@
+.toggle-wrapper {
+  width: 11.5rem;
+  border-bottom: 1px solid map-get($colors, light-gray);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  @include breakpoint(expanded) {
+    grid-area: 1 / 3;
+    width: auto;
+    border-bottom: none;
+  }
+}

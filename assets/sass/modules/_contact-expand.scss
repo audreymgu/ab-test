@@ -1,12 +1,12 @@
 .contact-expand {
-  &__header {
-    border-top: 1px solid map-get($colors, light-gray);
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.02rem;
+  &__icon {
     color: map-get($colors, dark-gray);
+    &--collapsed {
+      padding: 0 0.1rem 0 0;
+    }
   }
-  &__value {
-    margin-bottom: 1rem;
+  margin: 0 0.5rem 0 0.25rem;
+  @include breakpoint(expanded) {
+    margin: 0 1rem 0 1rem;
   }
 }

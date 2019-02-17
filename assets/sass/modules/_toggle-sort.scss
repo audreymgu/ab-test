@@ -1,0 +1,29 @@
+@import "block";
+
+.toggle-sort {
+  @extend .block;
+  &__btn {
+    display: inline-block;
+    line-height: 3.75rem;
+    padding: 0 1.125rem 0 1.125rem;
+    background-color: map-get($colors, blue);
+    @include breakpoint(expanded) {
+      line-height: 2.5rem;
+      padding: 0 0.75rem 0 0.75rem;
+      background-color: #ffffff;
+    }
+  }
+  &__icon {
+    color: #ffffff;
+    @include breakpoint(expanded) {
+      color: map-get($colors, blue);
+      margin-right: 0.5rem;
+    }
+  }
+  &__text {
+    display: none;
+    @include breakpoint(expanded) {
+      display: inline-block;
+    }
+  }
+}

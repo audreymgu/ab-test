@@ -1,6 +1,6 @@
 .nav-bar {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 11.5rem;
   @include breakpoint(expanded) {

@@ -21,7 +21,7 @@ for (i = 0; i < dropdownBtns.length; i++) {
     if (dropPanel.style.maxHeight) {
       dropPanel.style.maxHeight = null;
     } else {
-      dropPanel.style.maxHeight = "250px";
+      dropPanel.style.maxHeight = dropPanel.scrollHeight + 200 + "px";
     }
   });
 }

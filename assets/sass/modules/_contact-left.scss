@@ -1,9 +1,9 @@
 .contact-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   @include breakpoint(expanded) {
     grid-column-start: 1;
     grid-column: span 2;
   }
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }

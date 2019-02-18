@@ -1,9 +1,9 @@
 .title-wrapper {
+  border-bottom: 1px solid map-get($colors, light-gray);
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #ffffff;
-  border-bottom: 1px solid map-get($colors, light-gray);
   @include breakpoint(expanded) {
     align-items: flex-start;
     background-color: inherit;

@@ -1,4 +1,7 @@
 .dropdown-item {
+  &--extended {
+    grid-row: span 2;
+  }
   &__header {
     margin: 0 1rem 0 0;
     padding: 0.1rem 0 0 0;
@@ -10,8 +13,5 @@
   }
   &__value {
     margin-bottom: 1rem;
-  }
-  &--extended {
-    grid-row: span 2;
   }
 }

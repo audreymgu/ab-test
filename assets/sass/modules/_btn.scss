@@ -4,8 +4,21 @@
   @extend .block;
   border: 1px solid map-get($colors, light-gray);
   border-radius: 0.25rem;
-  padding: 0.25rem 0.25rem 0.2rem 0.25rem;
+  padding: 0.25rem 0.3rem 0.2rem 0.3rem;
   box-shadow: 0px 1px map-get($colors, light-gray);
+  &--compact {
+    margin: 0.2rem 0 0 0;
+    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+    @include breakpoint(expanded) {
+      margin: 0.4rem 0 0 1rem;
+    }
+  }
+  &--expand {
+    padding: 0.25rem 0.28rem 0.2rem 0.3rem;
+    &--active {
+      padding: 0.25rem 0.18rem 0.2rem 0.25rem;
+    }
+  }
   &__text {
     border-radius: 0.25rem;
     font-weight: 600;
@@ -26,16 +39,4 @@
       }
     }
   }
-  &--compact {
-    margin: 0.2rem 0 0 0;
-    padding: 0.2rem 0.4rem 0.2rem 0.4rem;
-    @include breakpoint(expanded) {
-      margin: 0.4rem 0 0 1rem;
-    }
-  &--expand {
-    &--active {
-
-    }
-  }
-
 }

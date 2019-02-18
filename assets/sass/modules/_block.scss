@@ -1,7 +1,7 @@
 .block {
-  @include breakpoint(expanded) {
-    border-radius: 0.25rem;
-    border: 1px solid map-get($colors, light-gray);
-  }
   background-color: #ffffff;
+  @include breakpoint(expanded) {
+    border: 1px solid map-get($colors, light-gray);
+    border-radius: 0.25rem;
+  }
 }
